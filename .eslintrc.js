@@ -1,11 +1,11 @@
-function transformStateWithClones(initialState, actions) {
-  let currentState = initialState;
-  const history = [];
-
-  actions.forEach((action) => {
-    const clonedState = JSON.parse(Json.stringify(currentState))
-
-  });
-
-  return history; 
-}
+module.exports = {
+  extends: '@mate-academy/eslint-config',
+  env: {
+    jest: true,
+    es6: true,
+  },
+  rules: {
+    'no-proto': 0,
+  },
+  plugins: ['jest'],
+};

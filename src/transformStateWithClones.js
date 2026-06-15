@@ -31,5 +31,4 @@ function transformStateWithClones(initialState, actions) {
   return history;
 }
 
-// Użyj tej składni zamiast "export":
 module.exports = transformStateWithClones;
