@@ -1,7 +1,7 @@
 'use strict';
 
 function transformStateWithClones(initialState, actions) {
-  let currentState = initialState;
+  let currentState = { ...initialState };
   const history = [];
 
   actions.forEach((action) => {
